@@ -22,7 +22,7 @@
   </div>
 
   <div class="cans" ng-repeat="candidate in candidates | orderBy: ['-votes', 'name']">
-    <span ng-click="delete(candidate)"><strong><i class="glyphicon glyphicon-delete"></i></strong></span>
+    <span ng-click="delete(candidate)"><strong><i class="glyphicon glyphicon-remove"></i></strong></span>
     {{candidate.name}} - votes {{candidate.votes}}
   </div>
 </body>
