@@ -36,7 +36,7 @@ router.param('vote', function(req, res, next, id) {
   var query = Vote.findById(id);
   query.exec(function (err, vote) {
     if(err) {return next(err); }
-    if(!vote) {return next(new Error("can't find comment")); }
+    if(!vote) {return next(new Error("I can't find that candidate")); }
     req.vote = vote;
     return next();
   });
